@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubetool
+  namespace: test
+spec:
+  selector:
+    matchLabels:
+      app: kubetool
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: kubetool
+    spec:
+      containers:
+      - name: kubetool
+        image: 15201086/ktest1:latest
+        ports:
+        - containerPort: 80
