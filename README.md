@@ -3,12 +3,13 @@ Tool to check few operation on the K8s resource
 
 This project creates a CLI tool using Golang which will be able to perform the following operations:
 
-1.Scale the number of pods
-2. Upgrade the version of the nginx server
-3. Deletes the pods
-4. Continuously watches for the desired number of replicas on the cluster and takes action accordingly
+1.Scale the number of pods  
+2. Upgrade the version of the nginx server  
+3. Deletes the pods  
+4. Continuously watches for the desired number of replicas on the cluster and takes action accordingly 
 
-This project also illustrates RBAC in K8s in particaular how one can create a user, give permissions to perform all actions on the ‘pod’ and ‘deployment’ resource in the ‘test’ namespace. Assign the required role.
+
+This project also illustrates RBAC in K8s in particaular how one can create a user, give permissions to perform all actions on the ‘pod’ and ‘deployment’ resource in the ‘test’ namespace and assign the required role.
 Include authentication using a kubeconfig file
 
 Prequisite:
